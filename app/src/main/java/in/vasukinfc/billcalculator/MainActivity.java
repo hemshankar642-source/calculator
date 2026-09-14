@@ -18,8 +18,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
@@ -29,7 +27,7 @@ import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends android.app.Activity {
     private static final String UPI_ID = "6377393721-4@ybl";
     private static final String PAYEE = "Vasuki NFC";
     private EditText amount, description;
